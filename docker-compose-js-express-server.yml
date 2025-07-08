@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  js-express-server:
+    build: ./js-express-server
+    ports:
+      - "8001:8001"
+    volumes:
+      - ./js-express-server:/app
+    command: yarn start
