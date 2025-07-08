@@ -9,7 +9,7 @@ services:
       - "8000:8000"
     volumes:
       - ./python-server/src:/app/src
-    command: python -u src/main.py
+    # Let Dockerfile CMD run uvicorn
 
   js-express-server:
     build: ./js-express-server
